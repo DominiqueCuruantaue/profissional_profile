@@ -28,3 +28,8 @@
 .project+.project{margin-top:24px}
 #vclasse,#monografia{scroll-margin-top:30px}
 @media(max-width:760px){.hero h1{font-size:clamp(42px,9vw,68px);letter-spacing:-2px}}
+
+/* Closed circular portrait, fully contained inside the identity card. */
+.identity .portrait-frame{right:16px;width:58%;height:auto;aspect-ratio:1;border-radius:50%;overflow:hidden}
+.identity .portrait-frame:after{border:1px solid #17211c66;border-radius:50%;z-index:1}
+@media(max-width:380px){.identity .portrait-frame{right:12px;width:57%}}
