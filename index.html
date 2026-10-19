@@ -10,16 +10,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=20261019-circle-utf8">
-  <link rel="stylesheet" href="assets/css/experience.css?v=20261019-circle-utf8">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261019-footer-nav">
+  <link rel="stylesheet" href="assets/css/experience.css?v=20261019-footer-nav">
 </head>
 <body>
   <a class="skip" href="#conteudo">Saltar para o conte&#250;do</a>
-  <header class="header wrap">
+  <header class="header">
+    <div class="header-inner wrap">
     <a class="brand" href="#inicio" aria-label="Dominique, in&#237;cio">dc<span>.</span></a>
     <nav aria-label="Navega&#231;&#227;o principal">
       <a href="#sobre">Sobre</a><a href="#experiencia">Experi&#234;ncia</a><a href="#trabalho">Projetos</a><a class="nav-contact" href="#contacto">Contactar <span aria-hidden="true">&#8599;</span></a>
     </nav>
+    </div>
   </header>
   <main id="conteudo">
     <section id="inicio" class="hero wrap" aria-labelledby="titulo">
@@ -86,18 +88,20 @@
       </div>
       <p class="work-note">Ainda n&#227;o h&#225; projetos de an&#225;lise de dados publicados. Este espa&#231;o ser&#225; atualizado &#224; medida que avan&#231;ar nos estudos.</p></div>
     </section>
-    <section id="contacto" class="section wrap contact" aria-labelledby="contacto-titulo">
+  </main>
+  <footer id="contacto" class="contact-footer" aria-labelledby="contacto-titulo">
+    <div class="section wrap contact">
       <p class="eyebrow">04 &#8212; CONTACTO</p>
       <h2 id="contacto-titulo">Vamos trocar<br>uma ideia<span class="accent">?</span></h2>
       <p>Entre em contacto comigo por email ou WhatsApp.</p>
       <div class="contact-links">
-        <a class="contact-link" href="mailto:dominiquedomingos24@gmail.com"><span>Email</span><strong>dominiquedomingos24@gmail.com</strong></a>
-        <a class="contact-link" href="https://wa.me/258852466388"><span>WhatsApp</span><strong>+258 85 246 6388</strong></a>
+        <a class="contact-link" href="mailto:dominiquedomingos24@gmail.com"><span class="contact-platform"><svg class="platform-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285f4" d="M2 5h3v15H2a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/><path fill="#34a853" d="M19 5h3a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2h-3Z"/><path fill="#ea4335" d="m5 5 7 5.25L19 5v5l-7 5.25L5 10Z"/><path fill="#fbbc04" d="m19 5 2.4-1.8A1.6 1.6 0 0 1 24 4.5V7l-5 3Z"/><path fill="#c5221f" d="M0 4.5a1.6 1.6 0 0 1 2.6-1.3L5 5v5L0 7Z"/></svg>Gmail</span><strong>dominiquedomingos24@gmail.com</strong></a>
+        <a class="contact-link" href="https://wa.me/258852466388"><span class="contact-platform"><svg class="platform-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#25d366" d="M20.52 3.48A11.91 11.91 0 0 0 12.05 0C5.47 0 .12 5.35.12 11.93c0 2.1.55 4.15 1.59 5.96L.02 24l6.25-1.64a11.9 11.9 0 0 0 5.77 1.47h.01C18.63 23.83 24 18.48 24 11.9c0-3.19-1.24-6.18-3.48-8.42Z"/><path fill="#fff" d="M17.47 14.3c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.69.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>WhatsApp</span><strong>+258 85 246 6388</strong></a>
       </div>
       <a class="button" href="https://github.com/DominiqueCuruantaue">Visitar o meu perfil <span aria-hidden="true">&#8599;</span></a>
-    </section>
-  </main>
-  <footer class="footer wrap"><a class="brand" href="#inicio" aria-label="Voltar ao in&#237;cio">dc<span>.</span></a><p>&#169; <span id="year">2026</span> Dominique Curuantaue</p><a href="#inicio">Voltar ao in&#237;cio &#8593;</a></footer>
-  <script src="assets/js/main.js" defer></script>
+    </div>
+    <div class="footer wrap"><a class="brand" href="#inicio" aria-label="Voltar ao in&#237;cio">dc<span>.</span></a><p>&#169; <span id="year">2026</span> Dominique Curuantaue</p><a href="#inicio">Voltar ao in&#237;cio &#8593;</a></div>
+  </footer>
+  <script src="assets/js/main.js?v=20261019-footer-nav" defer></script>
 </body>
 </html>
