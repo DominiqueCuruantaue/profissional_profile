@@ -11,3 +11,12 @@
 @media(min-width:1200px){.hero{grid-template-columns:1.15fr 1fr;gap:80px}.identity{min-height:455px}}
 @media(max-width:760px){.identity{width:100%;max-width:540px;min-height:340px;padding:25px}.monogram{left:25px;top:35%;font-size:155px}.portrait-frame{bottom:62px}.identity:before{width:330px;height:330px;right:-105px;top:55px}}
 @media(max-width:380px){.identity{min-height:300px;padding:20px}.monogram{left:20px;font-size:125px;letter-spacing:-17px}.identity-top{font-size:9px}.identity-bottom{font-size:9px}.identity-bottom>span:last-child{font-size:7px}.portrait-frame{width:51%;bottom:58px}}
+
+/* Apresentação: nome em destaque e contorno preso ao recorte do retrato. */
+.hero h1{font-size:clamp(60px,7.4vw,104px)}
+.monogram{font-size:clamp(120px,12.4vw,168px);letter-spacing:-20px}
+.identity-bottom>span:first-child{font-size:15px}
+.identity:before{content:none}
+.portrait-frame:after{content:"";position:absolute;inset:0;border:1px solid #17211c40;border-radius:inherit;pointer-events:none}
+@media(max-width:760px){.hero h1{font-size:clamp(56px,11vw,82px)}.monogram{font-size:140px}.identity-bottom>span:first-child{font-size:14px}}
+@media(max-width:380px){.monogram{font-size:114px;letter-spacing:-16px}.identity-bottom>span:first-child{font-size:12px}}
