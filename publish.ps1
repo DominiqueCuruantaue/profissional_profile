@@ -1,4 +1,6 @@
 $ErrorActionPreference = 'Stop'
+& node (Join-Path $PSScriptRoot 'scripts/build-learning.cjs')
+if ($LASTEXITCODE -ne 0) { throw 'Falha ao gerar os projetos por estudo.' }
 $OutputEncoding = New-Object System.Text.UTF8Encoding($false)
 $owner = 'DominiqueCuruantaue'
 $repo = 'profissional_profile'
@@ -14,6 +16,7 @@ if ($login -ne $owner) { throw "Autentique a conta $owner antes de publicar." }
 Invoke-Gh -GhArgs @('repo', 'view', "$owner/$repo")
 $files = @('assets/css/style.css', 'assets/css/experience.css', 'assets/js/main.js', 'assets/favicon.svg', 'assets/images/dominique-portrait.png', 'assets/certificates/compass-uol-participacao.pdf', '.nojekyll', 'index.html', 'publish.ps1')
 $files += @('assets/certificates/moc-introducao-t-sql.pdf', 'assets/certificates/alura-imersao-ia.pdf', 'assets/sql/Scripts_Imersao.sql')
+$files += @('data/learning.json', 'scripts/build-learning.cjs', 'scripts/test-learning.cjs', 'README.md', 'LEARNING.md')
 foreach ($file in $files) {
   $path = Join-Path $PSScriptRoot $file
   $encoded = [Convert]::ToBase64String([IO.File]::ReadAllBytes($path))

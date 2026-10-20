@@ -1,0 +1,75 @@
+{
+  "studies": [
+    {
+      "id": "google-dados",
+      "title": "Análise de Dados",
+      "provider": "Google · Coursera",
+      "formationId": "formacao-google",
+      "status": "Em formação",
+      "description": "Um percurso de aprendizagem em análise de dados, com projetos organizados pelos capítulos em que foram desenvolvidos.",
+      "chapters": []
+    },
+    {
+      "id": "tecmarc",
+      "title": "Programação assistida por IA",
+      "provider": "Tecmarc · Nampula",
+      "formationId": "experiencia-tecmarc",
+      "status": "Experiência de estágio",
+      "description": "Aplicação da aprendizagem em desenvolvimento de soluções digitais com apoio de inteligência artificial, Supabase e Cloudflare.",
+      "chapters": []
+    },
+    {
+      "id": "licungo",
+      "title": "Informática",
+      "provider": "Universidade Licungo · Quelimane",
+      "formationId": "formacao",
+      "status": "Formação concluída",
+      "description": "Projeto de monografia desenvolvido durante a formação em Informática.",
+      "chapters": []
+    },
+    {
+      "id": "moc-sql",
+      "title": "Introdução à Linguagem T-SQL",
+      "provider": "Imersão MOC",
+      "formationId": "imersao-moc",
+      "status": "Formação concluída",
+      "description": "Material prático associado à imersão de 8 horas realizada em 27 de setembro de 2025.",
+      "chapters": []
+    }
+  ],
+  "projects": [
+    {
+      "id": "vclasse",
+      "studyId": "tecmarc",
+      "chapterId": null,
+      "type": "project",
+      "title": "VClass · Um espaço para aprender",
+      "description": "Sistema de aprendizagem digital que desenvolvi durante o estágio na Tecmarc. Reúne aulas, exercícios e uma biblioteca, com um agente integrado para esclarecer dúvidas dos estudantes.",
+      "learning": "Desenvolvimento de aplicações com programação assistida por IA e infraestrutura com Supabase e Cloudflare.",
+      "skills": ["Programação assistida por IA", "Supabase", "Cloudflare"],
+      "links": [{"label": "Visitar o VClass", "url": "https://vclass.co.mz"}]
+    },
+    {
+      "id": "monografia",
+      "studyId": "licungo",
+      "chapterId": null,
+      "type": "project",
+      "title": "Sistema de pré-inscrição para exames de admissão",
+      "description": "Sistema que desenvolvi como projeto de monografia, com foco na pré-inscrição para os exames de admissão da Universidade Licungo.",
+      "learning": "Aplicação da formação em Informática ao desenvolvimento de uma solução para o contexto universitário.",
+      "skills": [],
+      "links": [{"label": "Visitar repositório", "url": "https://github.com/DominiqueCuruantaue/sistema.admissao.unilicungo.ac.mz"}]
+    },
+    {
+      "id": "moc-material-sql",
+      "studyId": "moc-sql",
+      "chapterId": null,
+      "type": "material",
+      "title": "Base de dados MOC · Script da imersão",
+      "description": "Material didático para criação e preenchimento de uma base de dados em SQL Server, com clientes, categorias, produtos, pedidos, itens dos pedidos e stock.",
+      "learning": "Estrutura de tabelas, chaves primárias e estrangeiras e inserção de dados de exemplo.",
+      "skills": ["T-SQL", "SQL Server", "Bases de dados relacionais"],
+      "links": [{"label": "Descarregar script SQL", "url": "assets/sql/Scripts_Imersao.sql", "download": true}]
+    }
+  ]
+}

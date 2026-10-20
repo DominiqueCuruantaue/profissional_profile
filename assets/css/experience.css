@@ -32,3 +32,26 @@ html{scroll-padding-top:calc(var(--header-height,110px) + 24px)}
 .hero-visual .identity{width:min(100%,calc((100svh - var(--header-height,110px) - 160px)*1.13628))}
 .hero-visual>.button{margin-top:0;flex-shrink:0}
 @media(max-width:760px){.hero-visual{grid-row:1}.hero-copy{grid-row:2}}
+
+/* Studies own chapters and the projects produced during learning. */
+.study-nav{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0}
+.study-nav a{padding:12px 16px;border:1px solid #bac5b1;border-radius:24px;font-size:14px}
+.study-nav a:hover{background:var(--green)}
+.study-group{background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:32px;margin-top:24px;scroll-margin-top:calc(var(--header-height,110px) + 24px)}
+.study-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:24px}
+.study-heading h3{margin:8px 0 16px;font-size:30px}
+.study-heading .tag{margin-top:8px;white-space:normal}
+.study-description,.study-group p:not(.eyebrow){font-size:15px;line-height:1.8;color:var(--muted)}
+.learning-projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:20px;margin-top:26px}
+.learning-project{min-width:0;border:1px solid var(--line);border-radius:5px;padding:24px;background:#fafaf6;scroll-margin-top:calc(var(--header-height,110px) + 24px)}
+.learning-project h4,.learning-chapter>h4{font-size:22px;font-weight:500;line-height:1.4;margin:10px 0 16px;letter-spacing:-.5px}
+.learning-origin{display:block;border-top:1px solid var(--line);padding-top:18px;margin-top:24px;font-size:13px;line-height:1.6}
+.learning-origin:hover{text-decoration:underline}
+.learning-skills{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none;margin:20px 0}
+.learning-skills li{background:#e9ece3;padding:6px 10px;border-radius:16px;font-size:12px}
+.learning-links{display:flex;flex-wrap:wrap;gap:16px}
+.learning-links .text-link span{margin-left:10px}
+.learning-empty{border-left:3px solid #77a447;padding:16px 20px;margin:26px 0 0;background:#e9ece3}
+.learning-chapter{border-top:1px solid var(--line);padding-top:24px;margin-top:28px}
+.learning-chapter .learning-project{margin-top:20px}
+@media(max-width:760px){.study-group{padding:22px}.study-heading{flex-direction:column;gap:0}.study-heading h3{font-size:26px}.study-heading .tag{margin:0 0 12px}.learning-project{padding:20px}.study-nav a{font-size:13px}.study-group .text-link{line-height:1.6}}
