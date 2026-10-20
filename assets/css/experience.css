@@ -19,4 +19,11 @@ html{scroll-padding-top:calc(var(--header-height,110px) + 24px)}
 .contact-footer .contact>.eyebrow{font-size:16px}
 .contact-platform{display:flex;align-items:center;gap:12px}
 .platform-icon{width:28px;height:28px;flex-shrink:0}
+/* Keep the identity card inside the opening viewport. */
+.hero{padding-top:28px;align-items:start}
+.hero .identity{min-height:0;width:min(100%,calc((100svh - var(--header-height,110px) - 64px)*1.13628));justify-self:center}
+.contact-links{gap:18px}
+.contact-links .contact-link{flex:0 0 64px;width:64px;height:64px;padding:16px;align-items:center;justify-content:center;border-radius:50%}
+.contact-links .platform-icon{width:30px;height:30px}
+@media(max-width:760px){.hero{padding-top:24px;row-gap:28px}.hero .identity{grid-row:1;max-width:420px}.hero-copy{grid-row:2}.hero-foot{grid-row:3}}
 @media(max-width:760px){.header-inner{gap:16px;padding-block:14px}.header-inner nav{flex:1}.contact-footer .section{padding-block:48px}}
